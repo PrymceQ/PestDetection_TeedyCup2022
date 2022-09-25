@@ -16,12 +16,18 @@ We assemble two models - Faster RCNN and YOLOV5. They are in `./models`
     
 2. `./Data_Visualization` contains some data visualization programs.
 
-        `Invalid_target_filtering.py`: Some pictures have no label box, we distinguish them；
+        `Invalid_target_filtering.py`: Because many labeled boxes are wrong, the labeled bugs are cut from the picture to filter;
         
-        `Visualization_of_average_pest_size.ipynb`: The average size of each pest is obtained according to the size of the pest label box；
+        `Visualization_of_average_pest_size.ipynb`: The average size of each pest is obtained according to the size of the pest label box;
         
         `Visualization_of_Detect_results.ipynb`: Visualization of target detection results.
 
 3. `./tools` contains some useful tools.
      
-
+        `Counting.py`: Count each pest;
+        
+        `Empty_image_separation.py`: Some pictures have no label box, we distinguish them;
+        
+        `kmeans_bbox.py`: Use the K-means method to determine the initial anchor-box settings;
+        
+        `NMS.ipynb`: NMS (Non Maximum Suppression).
